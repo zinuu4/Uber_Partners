@@ -1,0 +1,499 @@
+@media (max-width: 1400px) {
+    .menu {
+        &__item {
+            padding-right: 30px;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+@media (max-width: 1200px) {
+    .menu {
+        &__link {
+            font-size: 13px;
+        }
+        &__item {
+            padding-right: 20px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .promo {
+        &__header {
+            font-size: 45px;
+        }
+        &__subheader {
+            font-size: 32px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .item {
+        width: 295px;
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .footer{
+        &__wrapper > div {
+            width: 50%;
+            &:nth-child(1){
+                width: 25%;
+            }
+            &:nth-child(3) {
+                width: 25%;
+                display: flex; 
+                justify-content: flex-end;
+            }
+        }
+    }
+    .download {
+        margin-right: 23px;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+@media (max-width: 991px) {
+    .menu {
+        &__link {
+            font-size: 10px;
+        }
+        &__item {
+            padding-right: 10px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .subheader {
+        &__logo img {
+            width: 100%;
+        }
+        &__official {
+            font-size: 11px;
+        }
+        &__phone {
+            font-size: 18px;
+        }
+        &__button {
+            margin-top: 20px;
+            width: 100%;
+            font-size: 12px
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .promo {
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 28px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .reasons {
+        &__img {
+            margin-right: 0;
+        }
+        &__block {
+            flex-direction: column;
+        }
+        &__subtitle {
+            padding-top: 20px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .item {
+        width: 225px;
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .choice {
+		min-height: 800px;
+		&_img {
+			width: 100%;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .links {
+        &__main-menu {
+            font-size: 14px;
+        }
+        &__second-menu {
+            font-size: 10px;
+        }
+    }
+    .download {
+        & img {
+            width: 106px;
+            height: 30px;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+@media (max-width: 767px) {
+    .second-title {
+        font-size: 25px;
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        transition: 0.8s all;
+        &__active {
+            left: 0;
+        }
+        &__item {
+            padding-right: 0;
+            border: 0;
+            margin: 10px 0;
+        }
+        &__link {
+            font-size: 20px;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 27px;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 21px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 5px;
+            transition: 0.8s all;
+            cursor: pointer;
+        }
+        &__active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(7px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(7px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .subheader {
+        &__phone {
+            margin: 11px 0 10px 0;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+        &__button {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            &:hover {
+                background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%);
+            }
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .promo {
+        &__header {
+            font-size: 34px;
+            line-height: 38px;
+        }
+        &__subheader {
+            font-size: 26px;
+        }
+        &__button {
+            &:hover {
+                background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%);
+            }
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .reasons {
+        &__img {
+            margin-right: 0;
+        }
+        &__subtitle {
+			text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .choice {
+        min-height: 600px;
+        background-image: none;
+        background: #070716;
+        &__image img {
+            width: 100%;
+        }
+        &__promo {
+            color: white;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .require {
+        &__title {
+            font-size: 20px;
+        }
+        &__list li {
+            margin-bottom: 0;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .world {
+		min-height: 450px;
+        &__cities-link {
+            bottom: 30px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .social_media {
+        margin: 0 auto;
+        width: max-content;
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__wrapper > div {
+            width: auto;
+			margin-bottom: 20px;
+			&:nth-child(1){
+				order: 2;
+            }
+			&:nth-child(2){
+				order: 1;
+            }
+			&:nth-child(3){
+				order: 3;
+            }
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .links {
+        display: inline-block;
+        width: 360px;
+        &__main-menu {
+            padding: 0;
+            font-size: 14px;
+        }
+        &__second-menu {
+        }
+        &__language {
+            margin-top: 10px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .download {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+@media (max-width: 575px) {
+    nav {
+        height: 31px;
+    }
+    header {
+        height: 30px;
+    }
+    .subheader {
+        height: 62px;
+        top: 30px;
+        &__official {
+            display: none;
+        }
+        &__logo {
+            margin-top: 17px;
+        }
+        &__phone {
+            font-weight: 400;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 11px 0 6px 0;
+        }
+        &__button {
+            width: 110px;
+            height: 22px;
+            font-size: 9px;
+            &:hover {
+				background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%);
+            }
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .promo {
+        min-height: 400px;
+        padding: 115px 0 35px 0;
+        &__header {
+            padding: 0 24px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__subheader {
+            font-size: 20px;
+            line-height: 23px;
+            padding: 0 10px;
+        }
+        &__description {
+            display: none;
+        }
+        &__button {
+            margin-top: 72px;
+            width: 210px;
+            height: 50px;
+            font-size: 16px;
+            &:hover {
+				background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%);
+            }
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .menu {
+        width: 85%;
+        &__item {
+            width: 100%;
+            text-align: center;
+            padding: 3px 0;
+        }
+        &__link {
+            display: block;
+        }
+    }
+    .hamburger {
+        top: 18px;
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .second-title {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .reasons {
+        padding-bottom: 20px;
+        &__img {
+            margin-top: 20px;
+            margin-right: 0;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .mobile {
+        padding: 20px 0 20px 0;
+    }
+    .item {
+        width: 290px;
+        height: 254px;
+        padding-right: 30px;
+        padding-left: 30px;
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .choice {
+        min-height: 390px;
+        padding: 25px 0 33px 0;
+        &__second-title {
+            display: none;
+        }
+        &__subtitle {
+            display: none;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .require {
+        padding: 20px 0;
+        &__list {
+            margin-top: 3.5px;
+        }
+        &__list li {
+            margin-bottom: 3px;
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__block {
+            margin: 20px 0;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .world {
+        min-height: 360px;
+        padding: 20px 0;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__cities-link {
+            bottom: 10px;
+            font-size: 12px;
+        }
+    }
+/////////////////////////////////////////////////////////////////////////////
+    .footer {
+        padding: 25px 23px 30px 23px;
+        &__wrapper > div {
+            &:nth-child(1) {
+                width: auto;
+				order: 2;
+            }
+            &:nth-child(2) {
+                display: flex;
+                width: auto;
+                flex-wrap: wrap;
+            }
+        }
+        &__divider {
+            width: 255px;
+            margin: 0 auto;
+        }
+    }
+    .links {
+        width: 100%;
+        &__main-menu {
+            font-size: 13px;
+            margin-top: 25px;
+            & a:nth-child(1) {
+                margin: 0 !important;
+                text-align: center;
+                padding-right: 10px;
+                width: auto;
+            }
+            & a:nth-child(2) {
+                margin-right: 0;
+                text-align: center;
+                padding-right: 10px;
+                width: auto;
+            }
+            & a:nth-child(3) {
+                flex-wrap: nowrap;
+                width: auto;
+            }
+        }
+        &__second-menu {
+            max-width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            & a {
+                margin: 3px 16px;
+            }
+        }
+    }
+}
